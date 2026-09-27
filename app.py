@@ -8,7 +8,7 @@ st.set_page_config(page_title="Order Nhà Hàng", layout="wide")
 # Đường dẫn file dữ liệu dùng chung trên máy chủ
 CSV_FILE = "history.csv"
  
-# Thực đơn cố định của nhà hàng Mr. Bình
+# Thực đơn cố định của nhà hàng Ms. Kim Ngân 
 menu = {
    "Đồ ăn": {
        "Pizza Hải Sản": 150000,"Pizza cá": 500000,
@@ -56,7 +56,7 @@ if "admin_logged_in" not in st.session_state:
 page = st.sidebar.radio("📋 Chọn trang hệ thống", ["🍽️ Order", "🔑 Admin"])
  
 if page == "🍽️ Order":
-   st.title("🍽️ Hệ thống Order Nhà Hàng_Ms Kim Ngan")
+   st.title("🍽️ Hệ thống Order Nhà Hàng_Ms Kim Ngân")
    st.caption("Ghi nhận order nhanh chóng và chính xác theo thời gian thực")
  
    col1, col2 = st.columns([1, 1.3])
